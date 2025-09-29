@@ -41,6 +41,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <div className="space-y-2">
+              <Link href="/services" data-testid="footer-link-services">
+                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
+                  Services
+                </span>
+              </Link>
               <Link href="/gallery" data-testid="footer-link-gallery">
                 <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
                   Gallery
