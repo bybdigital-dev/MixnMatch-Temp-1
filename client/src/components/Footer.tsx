@@ -39,53 +39,16 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Services</h4>
+            <h4 className="font-semibold text-foreground">Quick Links</h4>
             <div className="space-y-2">
-              <Link href="/curtains-blinds" data-testid="footer-link-curtains-blinds">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-                  Curtains & Blinds
-                </span>
-              </Link>
-              <Link href="/upholstery" data-testid="footer-link-upholstery">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  Upholstery
-                </span>
-              </Link>
-              <Link href="/fabrics" data-testid="footer-link-fabrics">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  Premium Fabrics
-                </span>
-              </Link>
-              <Link href="/bedding-linen" data-testid="footer-link-bedding-linen">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  Bedding & Linen
-                </span>
-              </Link>
-              <Link href="/yarns-wool" data-testid="footer-link-yarns-wool">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  Yarns & Wool
-                </span>
-              </Link>
-            </div>
-          </div>
-
-          {/* Company Links */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Company</h4>
-            <div className="space-y-2">
-              <Link href="/about" data-testid="footer-link-about">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  About Us
-                </span>
-              </Link>
               <Link href="/gallery" data-testid="footer-link-gallery">
                 <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
                   Gallery
                 </span>
               </Link>
-              <Link href="/faq" data-testid="footer-link-faq">
+              <Link href="/about" data-testid="footer-link-about">
                 <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
-                  FAQ
+                  About Us
                 </span>
               </Link>
               <Link href="/contact" data-testid="footer-link-contact">
@@ -93,6 +56,18 @@ export default function Footer() {
                   Contact
                 </span>
               </Link>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-foreground">Our Services</h4>
+            <div className="space-y-2 text-muted-foreground text-sm">
+              <p>• Curtains & Blinds</p>
+              <p>• Upholstery Services</p>
+              <p>• Premium Fabrics</p>
+              <p>• Bedding & Linen</p>
+              <p>• Yarns & Wool</p>
             </div>
           </div>
 

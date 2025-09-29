@@ -9,11 +9,6 @@ export default function Header() {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Curtains & Blinds', path: '/curtains-blinds' },
-    { name: 'Upholstery', path: '/upholstery' },
-    { name: 'Fabrics', path: '/fabrics' },
-    { name: 'Bedding & Linen', path: '/bedding-linen' },
-    { name: 'Yarns & Wool', path: '/yarns-wool' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
