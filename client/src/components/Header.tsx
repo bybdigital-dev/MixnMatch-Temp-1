@@ -49,6 +49,7 @@ export default function Header() {
               variant="default" 
               className="hidden md:flex items-center space-x-2"
               data-testid="button-book-quote"
+              
             >
               <Phone className="w-4 h-4" />
               <span>Book Free Quote</span>
