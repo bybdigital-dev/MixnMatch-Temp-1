@@ -4,13 +4,17 @@ import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b
 
 export default function Hero() {
   const handleBookQuote = () => {
-    console.log('Book Free Quote clicked');
-    // TODO: remove mock functionality - replace with actual booking logic
+    const contactSection = document.getElementById('contact-form');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const handleLearnMore = () => {
-    console.log('Learn More clicked');
-    // TODO: remove mock functionality - replace with scroll to services or navigation
+    const servicesSection = document.getElementById('services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (

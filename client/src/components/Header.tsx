@@ -5,7 +5,19 @@ import { Menu, X, Phone } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
+
+  const handleBookQuote = () => {
+    if (location === '/') {
+      const contactSection = document.getElementById('contact-form');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate('/contact');
+    }
+    setIsMenuOpen(false);
+  };
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -48,8 +60,8 @@ export default function Header() {
             <Button 
               variant="default" 
               className="hidden md:flex items-center space-x-2"
+              onClick={handleBookQuote}
               data-testid="button-book-quote"
-              
             >
               <Phone className="w-4 h-4" />
               <span>Book Free Quote</span>
@@ -89,6 +101,7 @@ export default function Header() {
               <Button 
                 variant="default" 
                 className="flex items-center justify-center space-x-2 mt-4"
+                onClick={handleBookQuote}
                 data-testid="mobile-button-book-quote"
               >
                 <Phone className="w-4 h-4" />

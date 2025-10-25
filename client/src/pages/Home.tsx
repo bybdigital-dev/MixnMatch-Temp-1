@@ -121,8 +121,7 @@ export default function Home() {
   ];
 
   const handleViewAllServices = () => {
-    console.log('View all services clicked');
-    // TODO: remove mock functionality - replace with navigation
+    window.location.hash = '/services';
   };
 
   return (
@@ -131,7 +130,7 @@ export default function Home() {
       <Hero />
 
       {/* Quick Service Links */}
-      <section className="py-16 bg-muted/30">
+      <section id="services-section" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold mb-4">Our Services</h2>
