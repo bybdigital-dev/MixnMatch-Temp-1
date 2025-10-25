@@ -6,6 +6,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
+import CurtainsBlinds from "@/pages/CurtainsBlinds";
+import Upholstery from "@/pages/Upholstery";
+import Fabrics from "@/pages/Fabrics";
+import BeddingLinen from "@/pages/BeddingLinen";
+import YarnsWool from "@/pages/YarnsWool";
 import About from "@/pages/About";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
@@ -17,6 +22,11 @@ function Routes() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/curtains-blinds" component={CurtainsBlinds} />
+      <Route path="/upholstery" component={Upholstery} />
+      <Route path="/fabrics" component={Fabrics} />
+      <Route path="/bedding-linen" component={BeddingLinen} />
+      <Route path="/yarns-wool" component={YarnsWool} />
       <Route path="/about" component={About} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />

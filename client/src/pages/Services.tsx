@@ -29,7 +29,7 @@ export default function Services() {
       ],
       image: heroImage,
       icon: Blinds,
-      href: "#curtains-blinds"
+      href: "/curtains-blinds"
     },
     {
       title: "Upholstery Services", 
@@ -44,7 +44,7 @@ export default function Services() {
       ],
       image: upholsteryImage,
       icon: Scissors,
-      href: "#upholstery"
+      href: "/upholstery"
     },
     {
       title: "Premium Fabrics",
@@ -59,7 +59,7 @@ export default function Services() {
       ],
       image: fabricsImage,
       icon: Palette,
-      href: "#fabrics"
+      href: "/fabrics"
     },
     {
       title: "Bedding & Linen",
@@ -74,7 +74,7 @@ export default function Services() {
       ],
       image: beddingImage,
       icon: Bed,
-      href: "#bedding"
+      href: "/bedding-linen"
     },
     {
       title: "Yarns & Wool",
@@ -89,7 +89,7 @@ export default function Services() {
       ],
       image: yarnImage,
       icon: Zap,
-      href: "#yarns"
+      href: "/yarns-wool"
     }
   ];
 

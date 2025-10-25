@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, LucideIcon } from 'lucide-react';
+import { Link } from 'wouter';
 
 interface ServiceCardProps {
   title: string;
@@ -12,11 +13,6 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ title, description, features, image, icon: Icon, href = '#' }: ServiceCardProps) {
-  const handleLearnMore = () => {
-    console.log(`Learn more about ${title} clicked`);
-    // TODO: remove mock functionality - replace with actual navigation
-  };
-
   return (
     <Card className="hover-elevate transition-all duration-300 group overflow-hidden">
       <div className="relative h-48 overflow-hidden">
@@ -51,15 +47,16 @@ export default function ServiceCard({ title, description, features, image, icon:
           ))}
         </ul>
         
-        <Button 
-          variant="ghost" 
-          className="w-full justify-between p-0 h-auto text-primary hover:text-primary"
-          onClick={handleLearnMore}
-          data-testid={`button-service-learn-more-${title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
-        >
-          <span className="font-medium">Learn More</span>
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </Button>
+        <Link href={href}>
+          <Button 
+            variant="ghost" 
+            className="w-full justify-between p-0 h-auto text-primary hover:text-primary"
+            data-testid={`button-service-learn-more-${title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+          >
+            <span className="font-medium">Learn More</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );
