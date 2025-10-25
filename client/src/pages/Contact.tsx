@@ -73,12 +73,16 @@ export default function Contact() {
           </div>
 
           {/* Map Placeholder */}
-          <div className="bg-muted rounded-lg h-64 flex items-center justify-center mb-8">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
-              <p className="text-muted-foreground">Interactive map would go here</p>
-              <p className="text-sm text-muted-foreground">123 Design Street, Melbourne VIC 3000</p>
-            </div>
+          <div className="rounded-lg overflow-hidden mb-8">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1114.094579886283!2d28.258265569646507!3d-25.827012591435327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956722391248ab%3A0xdebc5db50956c613!2sMIX%20N%20MATCH!5e1!3m2!1sen!2sza!4v1761415647088!5m2!1sen!2sza" 
+              width="600" 
+              height="450" 
+              style={{ border: 0 }} 
+              allowFullScreen={true}
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
