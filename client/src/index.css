@@ -14,6 +14,14 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
+  --brand-blue: 245 86% 5%;
+
+  --brand-light-blue: 214 51% 37%;
+
+  --brand-red: 355 78% 56%;
+
+  --brand-green: 127 43% 46%;
+
   --background: 45 8% 98%;
 
   --foreground: 210 12% 15%;
@@ -48,11 +56,11 @@
 
   --popover-border: 45 10% 82%;
 
-  --primary: 45 55% 65%;
+  --primary: 214 51% 37%;
 
   --primary-foreground: 45 8% 98%;
 
-  --secondary: 45 15% 85%;
+  --secondary: 214 51% 37%;
 
   --secondary-foreground: 210 8% 25%;
 
@@ -60,7 +68,7 @@
 
   --muted-foreground: 210 6% 45%;
 
-  --accent: 150 20% 88%;
+  --accent: 127 43% 46%;
 
   --accent-foreground: 150 30% 25%;
 

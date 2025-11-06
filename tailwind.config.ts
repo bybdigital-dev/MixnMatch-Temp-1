@@ -12,6 +12,10 @@ export default {
       },
       colors: {
         // Flat / base colors (regular buttons)
+        'brand-blue': '#04021A',
+        'brand-light-blue': "#2f588f",
+        'brand-red': '#E63946',
+        'brand-green': '#43AA4F',
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",

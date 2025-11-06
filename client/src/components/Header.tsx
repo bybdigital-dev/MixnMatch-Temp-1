@@ -28,14 +28,19 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+    <header className="sticky top-0 z-50 bg-primary backdrop-blur supports-[backdrop-filter]:bg-primary border-b border-[#102456]">
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <h1 className="text-2xl font-serif font-bold text-foreground hover-elevate">
-              Textile Haven
+            <h1 className="text-4xl font-serif font-bold text-white hover-elevate">
+              M
+              <span className="text-brand-red">I</span>
+              <span className="text-brand-green">X </span>
+              N MATCH
             </h1>
+
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,8 +51,8 @@ export default function Header() {
                 href={item.path}
                 data-testid={`link-${item.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
               >
-                <span className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location === item.path ? 'text-primary' : 'text-muted-foreground'
+                <span className={`text-lg font-medium transition-colors hover:text-accent ${
+                  location === item.path ? 'text-primary-foreground' : 'text-muted-foreground'
                 }`}>
                   {item.name}
                 </span>
@@ -58,7 +63,7 @@ export default function Header() {
           {/* CTA Button and Mobile Menu */}
           <div className="flex items-center space-x-4">
             <Button 
-              variant="default" 
+              variant="secondary" 
               className="hidden md:flex items-center space-x-2"
               onClick={handleBookQuote}
               data-testid="button-book-quote"
