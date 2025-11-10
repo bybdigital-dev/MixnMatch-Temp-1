@@ -14,6 +14,8 @@ import fabricsImage from '@assets/generated_images/Fabric_swatches_collection_53
 import yarnImage from '@assets/generated_images/Yarn_collection_display_c9cdaaf9.png';
 import beddingImage from '@assets/generated_images/Luxury_bedding_lifestyle_a1d84396.png';
 import upholsteryImage from '@assets/generated_images/Upholstery_before_after_e6f2b2f5.png';
+import curtainsblindsImage from '@assets/generated_images/CurtainsBlinds.jpg';
+
 
 export default function Home() {
   // TODO: remove mock functionality - replace with real data from API
@@ -27,7 +29,7 @@ export default function Home() {
         "Blackout and light-filtering options",
         "Custom sizing for any window"
       ],
-      image: heroImage,
+      image: curtainsblindsImage,
       icon: Blinds,
       href: "/curtains-blinds"
     },

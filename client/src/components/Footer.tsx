@@ -1,14 +1,26 @@
 import { Link } from 'wouter';
-import { Facebook, Instagram, Twitter, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import footerBg from "@assets/generated_images/lines.jpg";
+
 
 export default function Footer() {
   return (
     <footer className="bg-card border-t">
+
+      
+      {/* FIXED BACKGROUND IMAGE 
+      <div
+        className="absolute inset-0 bg-fixed bg-cover bg-center -z-10"
+        style={{ backgroundImage: `url(${footerBg})` }}
+      />*/}
+
+
+      
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-bold text-foreground">Textile Haven</h3>
+            <h3 className="text-xl font-serif font-bold text-foreground">MIX N MATCH</h3>
             <p className="text-muted-foreground">
               Transform your home with beautiful textiles. Quality craftsmanship and professional service since 2010.
             </p>
@@ -42,22 +54,22 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <div className="space-y-2">
               <Link href="/services" data-testid="footer-link-services">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
                   Services
                 </span>
               </Link>
               <Link href="/gallery" data-testid="footer-link-gallery">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-green transition-colors cursor-pointer block">
                   Gallery
                 </span>
               </Link>
               <Link href="/about" data-testid="footer-link-about">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-light-blue transition-colors cursor-pointer block">
                   About Us
                 </span>
               </Link>
               <Link href="/contact" data-testid="footer-link-contact">
-                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
                   Contact
                 </span>
               </Link>
@@ -80,27 +92,98 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Get in Touch</h4>
             <div className="space-y-3">
+              
+              
               <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">(03) 9123 4567</span>
+
+                <a
+                  href="tel:0123452852"
+                  className="flex-shrink-0 hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-primary" />
+                </a>
+
+                <a
+                  href="tel:0123452852"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  012 345 2852
+                </a>
+
               </div>
+
+
               <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">hello@textilehaven.com</span>
+
+                <a
+                  href="https://wa.me/27767864444"
+                  className="flex-shrink-0 hover:text-primary transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4 text-primary" />
+                </a>
+
+                <a
+                  href="https://wa.me/27767864444"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  076 786 4444
+                </a>
+
               </div>
+
+
+              
+
+              
+
+
+              <div className="flex items-center space-x-2">
+
+                <a
+                  href="mailto:ridwan.j@telkomsa.net"
+                  className="flex-shrink-0 hover:text-primary transition-colors"
+                >
+                  <Mail className="w-4 h-4 text-primary" />
+                </a>
+
+                <a
+                  href="mailto:ridwan.j@telkomsa.net"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  ridwan.j@telkomsa.net
+                </a>
+
+              </div>
+
+
+              
               <div className="flex items-start space-x-2">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                <span className="text-muted-foreground">
-                  123 Design Street<br />
-                  Melbourne VIC 3000
-                </span>
+
+                <a
+                  href="#/contact"
+                  className="flex-shrink-0 hover:text-primary transition-colors"
+                >
+                  <MapPin className="w-4 h-4 text-primary mt-1" />
+                </a>
+
+                <a
+                  href="#/contact"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  5, Elardus Park Centre<br />
+                  Barnard St, Elardus Park<br />
+                  Pretoria
+                </a>
+
               </div>
+
+              
               <div className="flex items-start space-x-2">
                 <Clock className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                <div className="text-muted-foreground text-sm">
-                  <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                  <p>Sat: 10:00 AM - 4:00 PM</p>
-                  <p>Sun: Closed</p>
+                <div className="text-muted-foreground">
+                  <p>Mon-Thu: 9:00 - 17:30</p>
+                  <p>Sat: 08:45 - 14:30</p>
+                  <p>Fri: Closed Between 12:15 - 14:00</p>
                 </div>
               </div>
             </div>
@@ -109,8 +192,21 @@ export default function Footer() {
 
         <div className="border-t mt-12 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Textile Haven. All rights reserved. | Professional textile services in Melbourne and surrounding areas.
+            © 2024 MIX N MATCH. All rights reserved. | Professional textile services in Pretoria East.
           </p>
+          
+          <p>
+            Developed by{" "}
+            <a
+              href="https://buildyourbrand.web.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              BYB Digital
+            </a>
+          </p>
+          
         </div>
       </div>
     </footer>

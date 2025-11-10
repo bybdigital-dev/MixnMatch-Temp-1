@@ -37,36 +37,65 @@ export default function ContactForm() {
             </div>
 
             <div className="space-y-4">
+
+              {/* PHONE */}
               <div className="flex items-center space-x-3">
                 <div className="bg-primary/10 p-2 rounded-full">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+
+                <a
+                  href="tel:0123452852"
+                  className="block"
+                >
                   <p className="font-semibold">Phone</p>
-                  <p className="text-muted-foreground">(03) 9123 4567</p>
-                </div>
+                  <p className="text-muted-foreground">012 345 2852</p>
+                </a>
               </div>
 
+              {/* EMAIL */}
               <div className="flex items-center space-x-3">
                 <div className="bg-primary/10 p-2 rounded-full">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+
+                <a
+                  href="mailto:ridwan.j@telkomsa.net"
+                  className="block"
+                >
                   <p className="font-semibold">Email</p>
-                  <p className="text-muted-foreground">hello@textilehaven.com</p>
-                </div>
+                  <p className="text-muted-foreground">ridwan.j@telkomsa.net</p>
+                </a>
               </div>
 
+            
+              {/* WHATSAPP */}
               <div className="flex items-center space-x-3">
-                <div className="bg-primary/10 p-2 rounded-full">
+                <a
+                  href="https://wa.me/27767864444"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition"
+                >
                   <MessageCircle className="w-5 h-5 text-primary" />
-                </div>
-                <div>
+                </a>
+
+                <a
+                  href="https://wa.me/27767864444"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <p className="font-semibold">WhatsApp</p>
-                  <p className="text-muted-foreground">Quick response guaranteed</p>
-                </div>
+                  <p className="text-muted-foreground">076 786 4444</p>
+                </a>
               </div>
+
+                
             </div>
+              
+              
+
 
             <div className="bg-card p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">Why Choose Us?</h3>

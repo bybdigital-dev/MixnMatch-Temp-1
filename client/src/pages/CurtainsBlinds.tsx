@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Check, ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
 
-import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
+import curtainsblindsImage from '@assets/generated_images/CurtainsBlinds.jpg';
 
 export default function CurtainsBlinds() {
   return (
@@ -18,7 +18,7 @@ export default function CurtainsBlinds() {
       <section className="relative h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50 z-10" />
         <img 
-          src={heroImage} 
+          src={curtainsblindsImage} 
           alt="Curtains and Blinds" 
           className="w-full h-full object-cover"
         />

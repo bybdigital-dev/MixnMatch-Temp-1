@@ -88,15 +88,7 @@ export default function ProductGallery({ title, items, categories = [] }: Produc
                 
                 {/* Overlay Actions */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
-                  <Button 
-                    size="sm" 
-                    variant="secondary"
-                    onClick={() => handleViewDetails(item)}
-                    data-testid={`button-view-details-${item.id}`}
-                  >
-                    <Eye className="w-4 h-4 mr-1" />
-                    View
-                  </Button>
+                  
                   <Button 
                     size="sm" 
                     variant={favorites.has(item.id) ? "default" : "secondary"}

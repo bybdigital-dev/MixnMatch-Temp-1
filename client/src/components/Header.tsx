@@ -51,8 +51,8 @@ export default function Header() {
                 href={item.path}
                 data-testid={`link-${item.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
               >
-                <span className={`text-lg font-medium transition-colors hover:text-accent ${
-                  location === item.path ? 'text-primary-foreground' : 'text-muted-foreground'
+                <span className={`text-lg font-medium transition-colors hover:text-brand-red ${
+                  location === item.path ? 'text-white' : 'text-brand-green'
                 }`}>
                   {item.name}
                 </span>
@@ -96,15 +96,15 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   data-testid={`mobile-link-${item.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
                 >
-                  <span className={`block text-sm font-medium transition-colors hover:text-primary ${
-                    location === item.path ? 'text-primary' : 'text-muted-foreground'
+                  <span className={`block text-sm font-medium transition-colors hover:text-brand-red ${
+                    location === item.path ? 'text-white' : 'text-brand-green'
                   }`}>
                     {item.name}
                   </span>
                 </Link>
               ))}
               <Button 
-                variant="default" 
+                variant="secondary" 
                 className="flex items-center justify-center space-x-2 mt-4"
                 onClick={handleBookQuote}
                 data-testid="mobile-button-book-quote"

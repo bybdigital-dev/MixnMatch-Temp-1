@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone, Star } from 'lucide-react';
-import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
+import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.jpg';
 
 export default function Hero() {
   const handleBookQuote = () => {
@@ -31,18 +31,33 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl">
           {/* Trust Indicators */}
-          <div className="flex items-center space-x-4 mb-6">
+           <div className="flex items-center space-x-4 mb-6">
             <div className="flex items-center space-x-1">
-              {[...Array(5)].map((_, i) => (
+              {/*{[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-              ))}
+              ))} */}
             </div>
             <span className="text-white/90 text-sm font-medium">Trusted by 500+ happy customers</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight" data-testid="text-hero-heading">
-            Beautiful Textiles for Every Home
+            
+            <span className="text-brand-green">B</span>
+            eaut
+            <span className="text-brand-red">i</span>
+            ful Te
+            <span className="text-brand-green">x</span>
+            t
+            <span className="text-brand-red">i</span>
+            les 
+            f
+            <span className="text-brand-green">o</span>
+            r Eve
+            <span className="text-brand-red">r</span>
+            y Ho
+            <span className="text-brand-green">m</span>
+            e
           </h1>
 
           {/* Subheading */}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductGallery from '@/components/ProductGallery';
+import footerBg from "@assets/generated_images/lines.jpg";
 
 // Import generated images
 import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
@@ -96,6 +97,8 @@ export default function Gallery() {
         </div>
       </section>
 
+    
+      
       {/* Gallery */}
       <ProductGallery 
         title="Our Work" 

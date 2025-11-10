@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Clock, Phone, Mail } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -32,10 +32,27 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-                <p className="text-muted-foreground">(03) 9123 4567</p>
+                <p className="text-muted-foreground">012 345 2852</p>
                 <p className="text-sm text-muted-foreground mt-2">Call us for immediate assistance</p>
               </CardContent>
             </Card>
+
+
+            <Card className="text-center hover-elevate">
+              <CardContent className="p-6">
+                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">WhatsApp</h3>
+                <p className="text-muted-foreground">076 786 4444</p>
+                <p className="text-sm text-muted-foreground mt-2">We would love to chat to you</p>
+              </CardContent>
+            </Card>
+
+
+
+            
+            
 
             <Card className="text-center hover-elevate">
               <CardContent className="p-6">
@@ -43,21 +60,12 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                <p className="text-muted-foreground">hello@textilehaven.com</p>
+                <p className="text-muted-foreground">ridwan.j@telkomsa.net</p>
                 <p className="text-sm text-muted-foreground mt-2">We respond within 24 hours</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover-elevate">
-              <CardContent className="p-6">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Address</h3>
-                <p className="text-muted-foreground">123 Design Street</p>
-                <p className="text-muted-foreground">Melbourne VIC 3000</p>
-              </CardContent>
-            </Card>
+  
 
             <Card className="text-center hover-elevate">
               <CardContent className="p-6">
@@ -65,15 +73,17 @@ export default function Contact() {
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Hours</h3>
-                <p className="text-muted-foreground text-sm">Mon-Fri: 9AM-6PM</p>
-                <p className="text-muted-foreground text-sm">Sat: 10AM-4PM</p>
-                <p className="text-muted-foreground text-sm">Sun: Closed</p>
+                <p className="text-muted-foreground text-sm">Mon-Thu: 9:00 - 17:30</p>
+                <p className="text-muted-foreground text-sm">Sat: 08:45 - 14:30</p>
+                <p className="text-muted-foreground text-sm">Fri: Closed Between 12:15 - 14:00</p>
               </CardContent>
             </Card>
           </div>
 
           {/* Map Placeholder */}
+        <div id="map">
           <div className="rounded-lg overflow-hidden mb-8 w-full h-96">
+            
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1114.094579886283!2d28.258265569646507!3d-25.827012591435327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956722391248ab%3A0xdebc5db50956c613!2sMIX%20N%20MATCH!5e1!3m2!1sen!2sza!4v1761415647088!5m2!1sen!2sza" 
               width="100%" 
@@ -83,6 +93,8 @@ export default function Contact() {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
             />
+            
+          </div>
           </div>
           </div>
       </section>
