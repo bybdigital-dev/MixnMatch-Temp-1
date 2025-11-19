@@ -28,10 +28,10 @@ export default function ContactForm() {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-serif font-bold mb-4" data-testid="text-contact-heading">
-                Get Your Free Quote
+                Get Your Quick Quote
               </h2>
               <p className="text-muted-foreground text-lg">
-                Ready to transform your home? Contact us for a free consultation and quote. 
+                Ready to transform your home? Contact us for a quick consultation and quote. 
                 Our experts are here to help bring your vision to life.
               </p>
             </div>
@@ -100,35 +100,42 @@ export default function ContactForm() {
             <div className="bg-card p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">Why Choose Us?</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Free consultation and measurement</li>
-                <li>• Professional installation included</li>
-                <li>• 5-year quality guarantee</li>
+                <li>• Professional consultation and measurement</li>
+                <li>• Quality installation included</li>
+                <li>• Quality guaranteed</li>
                 <li>• Over 500 happy customers</li>
               </ul>
             </div>
           </div>
 
+          
           {/* Contact Form */}
+          {/*
           <Card className="shadow-lg">
             <CardHeader>
               <CardTitle className="text-xl font-serif">Send Us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               {/* IMPORTANT: FormSubmit integration (native POST) */}
+          {/*
               <form
                 action="https://formsubmit.co/YOUR_EMAIL@example.com"
                 method="POST"
                 className="space-y-6"
               >
                 {/* FormSubmit options */}
+          {/*}
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 {/* redirect after success (optional) */}
+          {/*}
                 <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
                 {/* honeypot (spam trap) */}
+          {/*}
                 <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
                 {/* Because Radix Select isn't a native <select>, mirror the value in a hidden input */}
+          {/*}
                 <input type="hidden" name="service" value={formData.service} />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -222,6 +229,7 @@ export default function ContactForm() {
               </form>
             </CardContent>
           </Card>
+      */}
         </div>
       </div>
     </section>

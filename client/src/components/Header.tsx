@@ -3,6 +3,7 @@ import { Link, useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone } from 'lucide-react';
 
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location, navigate] = useLocation();
@@ -69,7 +70,7 @@ export default function Header() {
               data-testid="button-book-quote"
             >
               <Phone className="w-4 h-4" />
-              <span>Book Free Quote</span>
+              <span>Book Quick Quote</span>
             </Button>
 
             {/* Mobile Menu Button */}
@@ -110,7 +111,7 @@ export default function Header() {
                 data-testid="mobile-button-book-quote"
               >
                 <Phone className="w-4 h-4" />
-                <span>Book Free Quote</span>
+                <span>Book Quick Quote</span>
               </Button>
             </nav>
           </div>

@@ -22,11 +22,11 @@ export default function Home() {
   const services = [
     {
       title: "Curtains & Blinds",
-      description: "Transform your windows with our extensive range of curtains and blinds. From roller and Roman to Venetian and blackout options.",
+      description: "Transform your windows with our extensive range of curtains and blinds. From roller and Roman to Venetian and blockout options.",
       features: [
         "Professional measurement and installation",
         "Wide range of styles and materials",
-        "Blackout and light-filtering options",
+        "Blockout and light-filtering options",
         "Custom sizing for any window"
       ],
       image: curtainsblindsImage,
@@ -48,7 +48,7 @@ export default function Home() {
     },
     {
       title: "Premium Fabrics",
-      description: "Choose from our curated collection of luxury fabrics including linen, cotton, outdoor materials, and blackout lining.",
+      description: "Choose from our curated collection of luxury fabrics including linen, cotton, outdoor materials, and blockout lining.",
       features: [
         "High-quality materials",
         "Sustainable and eco-friendly options",
@@ -168,7 +168,9 @@ export default function Home() {
         categories={['Fabrics', 'Yarns', 'Bedding']}
       />
 
-      {/* Testimonials */}
+
+      {/*
+      {/* Testimonials 
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -185,6 +187,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      */}
 
       {/* Contact Form */}
       <ContactForm />

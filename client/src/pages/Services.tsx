@@ -18,13 +18,12 @@ export default function Services() {
   const services = [
     {
       title: "Curtains & Blinds",
-      description: "Transform your windows with our extensive range of curtains and blinds. From roller and Roman to Venetian and blackout options, we provide professional measurement and installation.",
+      description: "Transform your windows with our extensive range of curtains and blinds. From roller and Roman to Venetian and blockout options, we provide professional measurement and installation.",
       features: [
-        "S-fold, eyelet, and Roman blind styles",
+        "Eyelet, Sheer and Roman blind styles",
         "Professional measurement and installation", 
-        "Blackout and light-filtering options",
+        "Blockout and light-filtering options",
         "Custom sizing for any window",
-        "Motorized and smart home integration",
         "Wide range of premium fabrics"
       ],
       image: heroImage,
@@ -53,7 +52,7 @@ export default function Services() {
         "High-quality materials sourced globally",
         "Sustainable and eco-friendly options", 
         "Indoor and outdoor fabric varieties",
-        "Blackout lining and specialty fabrics",
+        "Blockout lining and specialty fabrics",
         "Expert fabric consultation",
         "Custom fabric sourcing available"
       ],
@@ -115,7 +114,7 @@ export default function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" data-testid="button-services-quote">
-              Get Free Quote
+              Get Quick Quote
             </Button>
             <Button 
               variant="outline" 
@@ -164,7 +163,7 @@ export default function Services() {
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold mb-4">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-3">Free Consultation</h3>
+              <h3 className="text-xl font-semibold mb-3">Quick Consultation</h3>
               <p className="text-muted-foreground">We visit your home to assess your needs and discuss your vision</p>
             </div>
             
@@ -196,6 +195,7 @@ export default function Services() {
       </section>
 
       {/* Why Choose Us */}
+      {/*
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -248,11 +248,11 @@ export default function Services() {
               <h3 className="text-2xl font-serif font-bold mb-6">Ready to Get Started?</h3>
               <p className="text-muted-foreground mb-6">
                 Transform your home with our professional textile services. 
-                Contact us today for your free consultation and quote.
+                Contact us today for your quick consultation and quote.
               </p>
               <div className="space-y-4">
                 <Button className="w-full" size="lg" data-testid="button-services-contact">
-                  Book Free Consultation
+                  Book Quick Consultation
                 </Button>
                 <div className="text-center text-sm text-muted-foreground">
                   <p>📞 (03) 9123 4567</p>
@@ -263,8 +263,13 @@ export default function Services() {
           </div>
         </div>
       </section>
+      */}
 
+
+      {/*
       <ContactForm />
+      */}
+      
       <Footer />
     </div>
   );

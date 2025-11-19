@@ -17,7 +17,7 @@ export default function Contact() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Ready to transform your home? We'd love to hear about your project. 
-            Get in touch for a free consultation and quote.
+            Get in touch for a quick consultation and quote.
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function Contact() {
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Phone</h3>
                 <p className="text-muted-foreground">012 345 2852</p>
-                <p className="text-sm text-muted-foreground mt-2">Call us for immediate assistance</p>
+                <p className="text-sm text-muted-foreground mt-2">Call us for assistance</p>
               </CardContent>
             </Card>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Email</h3>
                 <p className="text-muted-foreground">ridwan.j@telkomsa.net</p>
-                <p className="text-sm text-muted-foreground mt-2">We respond within 24 hours</p>
+                <p className="text-sm text-muted-foreground mt-2"></p>
               </CardContent>
             </Card>
 

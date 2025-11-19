@@ -4,8 +4,9 @@ import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'wouter';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 import curtainsblindsImage from '@assets/generated_images/CurtainsBlinds.jpg';
 
@@ -33,7 +34,7 @@ export default function CurtainsBlinds() {
               Professional measurement and installation included.
             </p>
             <Button size="lg" data-testid="button-curtains-quote">
-              Get Free Quote
+              Get Quick Quote
             </Button>
           </div>
         </div>
@@ -55,7 +56,7 @@ export default function CurtainsBlinds() {
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-3">Curtain Styles</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> S-fold curtains</li>
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Alterations</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Eyelet curtains</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Pinch pleat curtains</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Sheer curtains</li>
@@ -72,7 +73,7 @@ export default function CurtainsBlinds() {
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Roller blinds</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Venetian blinds</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Vertical blinds</li>
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Motorized options</li>
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Sheer blinds</li>
                 </ul>
               </CardContent>
             </Card>
@@ -81,11 +82,11 @@ export default function CurtainsBlinds() {
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-3">Premium Features</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Smart home integration</li>
+
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Professional measuring and installation</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Energy efficient fabrics</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Custom sizing</li>
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Free installation</li>
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> 5-year warranty</li>
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Quality guaranteed</li>
                 </ul>
               </CardContent>
             </Card>
@@ -100,7 +101,7 @@ export default function CurtainsBlinds() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold mb-4">1</div>
-              <h3 className="text-xl font-semibold mb-2">Free Consultation</h3>
+              <h3 className="text-xl font-semibold mb-2">Quick Consultation</h3>
               <p className="text-muted-foreground">We visit your home to assess your windows and discuss your style preferences</p>
             </div>
             <div className="text-center">
@@ -129,16 +130,22 @@ export default function CurtainsBlinds() {
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-serif font-bold mb-4">Ready to Transform Your Windows?</h2>
               <p className="text-lg mb-6 opacity-90">
-                Book your free consultation today and discover the perfect window treatments for your home
+                Book your quick consultation today and discover the perfect window treatments for your home
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="secondary" size="lg" data-testid="button-curtains-book">
-                  Book Free Consultation
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-7 h-7 mr-2 object-contain"
+                  />
+                  WhatsApp Us!
                 </Button>
                 <Link href="/services">
-                  <Button variant="outline" size="lg" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                    View All Services
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button variant="outline" size="lg" className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white">
+                    <Phone className="w-10 h-10 mr-2" />
+                    Call Us!
+                    
                   </Button>
                 </Link>
               </div>

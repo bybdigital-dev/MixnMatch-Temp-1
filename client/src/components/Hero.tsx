@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone, Star } from 'lucide-react';
 import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.jpg';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 export default function Hero() {
   const handleBookQuote = () => {
@@ -70,23 +71,27 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               size="lg" 
-              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="text-lg px-8 py-6 bg-brand-green hover:bg-brand-light-blue text-brand-blue"
               onClick={handleBookQuote}
               data-testid="button-hero-book-quote"
             >
-              <Phone className="w-5 h-5 mr-2" />
-              Book Free Quote
+              <img 
+                src={whatsappIcon} 
+                alt="WhatsApp" 
+                className="w-10 h-10 mr-2 object-contain"
+              />
+              WhatsApp Us!
             </Button>
             
             <Button 
               variant="outline" 
               size="lg" 
-              className="text-lg px-8 py-6 text-white border-white/30 hover:bg-white/10 backdrop-blur-sm"
+              className="text-lg px-8 py-6 bg-brand-red text-white border-brand-green hover:bg-brand-light-blue backdrop-blur-sm"
               onClick={handleLearnMore}
               data-testid="button-hero-learn-more"
             >
-              Learn More
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <Phone className="w-10 h-10 mr-2" />
+              Call Us!
             </Button>
           </div>
 
@@ -94,7 +99,7 @@ export default function Hero() {
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
             {['Curtains & Blinds', 'Upholstery', 'Premium Fabrics', 'Bedding & Linen'].map((service) => (
               <div key={service} className="text-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="bg-brand-light-blue/80 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                   <p className="text-white font-medium text-sm">{service}</p>
                 </div>
               </div>

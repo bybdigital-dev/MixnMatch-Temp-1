@@ -19,7 +19,7 @@ export default function Gallery() {
       title: 'Modern Living Room Curtains',
       category: 'Curtains & Blinds',
       image: heroImage,
-      description: 'S-fold curtains in premium linen with blackout lining'
+      description: 'Variety of curtains in premium linen with blockout lining'
     },
     {
       id: '2',
@@ -114,14 +114,14 @@ export default function Gallery() {
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             Get inspired by our gallery and let us create something beautiful for your space. 
-            Book a free consultation to discuss your project.
+            Book a quick consultation to discuss your project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover-elevate"
               data-testid="button-gallery-book-quote"
             >
-              Book Free Quote
+              Book Quick Quote
             </button>
             <button 
               className="border border-border text-foreground px-8 py-4 rounded-lg font-medium hover-elevate"

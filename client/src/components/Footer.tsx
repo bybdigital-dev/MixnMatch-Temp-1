@@ -20,10 +20,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-bold text-foreground">MIX N MATCH</h3>
+            <h3 className="text-xl font-serif font-bold text-brand-light-blue">
+              M
+              <span className="text-brand-red">I</span>
+              <span className="text-brand-green">X </span>
+              N MATCH
+              </h3>
             <p className="text-muted-foreground">
               Transform your home with beautiful textiles. Quality craftsmanship and professional service since 2010.
             </p>
+
+            {/*}
             <div className="flex space-x-4">
               <a 
                 href="#" 
@@ -47,6 +54,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
@@ -64,12 +72,12 @@ export default function Footer() {
                 </span>
               </Link>
               <Link href="/about" data-testid="footer-link-about">
-                <span className="text-muted-foreground hover:text-brand-light-blue transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
                   About Us
                 </span>
               </Link>
               <Link href="/contact" data-testid="footer-link-contact">
-                <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-green transition-colors cursor-pointer block">
                   Contact
                 </span>
               </Link>
@@ -170,9 +178,10 @@ export default function Footer() {
                   href="#/contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  5, Elardus Park Centre<br />
-                  Barnard St, Elardus Park<br />
-                  Pretoria
+                  Shop 5<br />
+                  Park Shopping Centre<br />
+                  Elardus Park<br />
+                  Pretoria East<br />
                 </a>
 
               </div>

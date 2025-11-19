@@ -33,7 +33,7 @@ export default function Upholstery() {
               Expert craftsmanship meets beautiful fabrics.
             </p>
             <Button size="lg" data-testid="button-upholstery-quote">
-              Get Free Quote
+              Get Quick Quote
             </Button>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Upholstery() {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> 14+ years experience</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Premium fabric selection</li>
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Free pickup & delivery</li>
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Quick pickup & delivery</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Before/after photos</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Quality guarantee</li>
                 </ul>
@@ -106,7 +106,7 @@ export default function Upholstery() {
             <div className="text-center">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold mb-4">2</div>
               <h3 className="text-xl font-semibold mb-2">Pickup</h3>
-              <p className="text-muted-foreground">Free collection from your home at a convenient time</p>
+              <p className="text-muted-foreground">Quick collection from your home at a convenient time</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold mb-4">3</div>
@@ -129,11 +129,11 @@ export default function Upholstery() {
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-serif font-bold mb-4">Ready to Restore Your Furniture?</h2>
               <p className="text-lg mb-6 opacity-90">
-                Get a free quote for professional upholstery services today
+                Get a quick quote for professional upholstery services today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="secondary" size="lg" data-testid="button-upholstery-book">
-                  Book Free Consultation
+                  Book Quick Consultation
                 </Button>
                 <Link href="/services">
                   <Button variant="outline" size="lg" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
