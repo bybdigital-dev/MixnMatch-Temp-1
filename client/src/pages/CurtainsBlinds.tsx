@@ -123,7 +123,7 @@ export default function CurtainsBlinds() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Sections */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <Card className="bg-primary text-primary-foreground">
