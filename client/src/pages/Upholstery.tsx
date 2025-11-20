@@ -4,8 +4,9 @@ import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'wouter';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 import upholsteryImage from '@assets/generated_images/Upholstery_before_after_e6f2b2f5.png';
 
@@ -44,7 +45,7 @@ export default function Upholstery() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-serif font-bold mb-4">Expert Furniture Restoration</h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-white text-lg bg-brand-light-blue px-1 rounded">
               From treasured antiques to modern favorites, our skilled craftspeople restore and 
               refresh your furniture with care and precision.
             </p>
@@ -132,13 +133,19 @@ export default function Upholstery() {
                 Get a quick quote for professional upholstery services today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="secondary" size="lg" data-testid="button-upholstery-book">
-                  Book Quick Consultation
+                <Button variant="secondary" size="lg" data-testid="button-curtains-book">
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-7 h-7 mr-2 object-contain"
+                  />
+                  WhatsApp Us!
                 </Button>
                 <Link href="/services">
-                  <Button variant="outline" size="lg" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                    View All Services
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button variant="outline" size="lg" className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white">
+                    <Phone className="w-10 h-10 mr-2" />
+                    Call Us!
+
                   </Button>
                 </Link>
               </div>

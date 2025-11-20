@@ -58,10 +58,10 @@ export default function Gallery() {
     },
     {
       id: '7',
-      title: 'Outdoor Fabric Selection',
+      title: 'Luxury Fabric Selection',
       category: 'Fabrics',
       image: fabricsImage,
-      description: 'Weather-resistant fabrics for outdoor furniture'
+      description: 'Premium fabrics in various textures and colors'
     },
     {
       id: '8',

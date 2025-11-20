@@ -45,10 +45,11 @@ export default function CurtainsBlinds() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-serif font-bold mb-4">Complete Window Solutions</h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-white text-lg bg-brand-light-blue px-1 rounded">
               Whether you're looking for elegant curtains to frame your windows or functional blinds 
               for light control, we provide professional solutions tailored to your needs.
             </p>
+
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">

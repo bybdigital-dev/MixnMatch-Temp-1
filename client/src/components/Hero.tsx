@@ -69,31 +69,46 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-brand-green hover:bg-brand-light-blue text-brand-blue"
-              onClick={handleBookQuote}
-              data-testid="button-hero-book-quote"
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/27767864444"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              <img 
-                src={whatsappIcon} 
-                alt="WhatsApp" 
-                className="w-10 h-10 mr-2 object-contain"
-              />
-              WhatsApp Us!
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-brand-red text-white border-brand-green hover:bg-brand-light-blue backdrop-blur-sm"
-              onClick={handleLearnMore}
-              data-testid="button-hero-learn-more"
+              <Button 
+                size="lg"
+                className="h-16 text-lg px-8 bg-brand-green hover:bg-brand-light-blue text-brand-blue inline-flex items-center"
+              >
+                <span className="w-10 h-10 mr-2 flex items-center justify-center">
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-9 h-9 object-contain"
+                  />
+                </span>
+                WhatsApp Us!
+              </Button>
+            </a>
+
+            {/* Call Us Button */}
+            <a
+              href="tel:0833064444"
+              className="inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Phone className="w-10 h-10 mr-2" />
-              Call Us!
-            </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="h-16 text-lg px-8 bg-brand-red text-white border-brand-green hover:bg-brand-light-blue backdrop-blur-sm inline-flex items-center"
+              >
+                <Phone className="w-6 h-6 mr-2" />
+                Call Us!
+              </Button>
+            </a>
           </div>
+
 
           {/* Key Services */}
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">

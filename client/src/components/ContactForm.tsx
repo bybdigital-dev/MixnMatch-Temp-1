@@ -51,6 +51,17 @@ export default function ContactForm() {
                   <p className="font-semibold">Phone</p>
                   <p className="text-muted-foreground">012 345 2852</p>
                 </a>
+
+                
+                <a
+                  href="tel:0833064444"
+                  className="block"
+                >
+                  <p className="font-semibold text-muted/30">.</p>
+                  <p className="text-muted-foreground">/  083 306 4444</p>
+                </a>
+
+                
               </div>
 
               {/* EMAIL */}
@@ -101,8 +112,8 @@ export default function ContactForm() {
               <h3 className="font-semibold mb-2">Why Choose Us?</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Professional consultation and measurement</li>
-                <li>• Quality installation included</li>
-                <li>• Quality guaranteed</li>
+                <li>• Quality installation</li>
+                <li>• Quality materials guaranteed</li>
                 <li>• Over 500 happy customers</li>
               </ul>
             </div>

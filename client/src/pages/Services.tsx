@@ -4,7 +4,8 @@ import ServiceCard from '@/components/ServiceCard';
 import ContactForm from '@/components/ContactForm';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Blinds, Scissors, Palette, Bed, Zap, ArrowRight } from 'lucide-react';
+import { Blinds, Scissors, Palette, Bed, Zap, ArrowRight, Phone } from 'lucide-react';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 // Import generated images
 import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
@@ -79,11 +80,10 @@ export default function Services() {
       title: "Yarns & Wool",
       description: "Discover our extensive collection of knitting and crochet yarns. From cotton and wool to acrylic blends, we have materials for every project and skill level.",
       features: [
-        "Cotton, wool, and acrylic varieties",
+        "Cotton, wool, and acrylic varieties available in-store",
         "Multiple weights and textures",
         "Yarn color gallery display",
         "Hook and needle size guidance",
-        "Project consultation available",
         "Bulk pricing for large projects"
       ],
       image: yarnImage,

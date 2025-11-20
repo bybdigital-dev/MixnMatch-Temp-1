@@ -32,7 +32,7 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-                <p className="text-muted-foreground">012 345 2852</p>
+                <p className="text-muted-foreground">012 345 2852 / 083 306 4444</p>
                 <p className="text-sm text-muted-foreground mt-2">Call us for assistance</p>
               </CardContent>
             </Card>

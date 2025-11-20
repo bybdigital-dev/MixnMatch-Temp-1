@@ -4,8 +4,9 @@ import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'wouter';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 import yarnImage from '@assets/generated_images/Yarn_collection_display_c9cdaaf9.png';
 
@@ -81,8 +82,7 @@ export default function YarnsWool() {
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-3">Services & Support</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Expert advice</li>
-                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Project consultation</li>
+                  <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Friendly advice</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Pattern recommendations</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Bulk discounts</li>
                   <li className="flex items-start"><Check className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" /> Color matching service</li>
@@ -133,16 +133,22 @@ export default function YarnsWool() {
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-serif font-bold mb-4">Start Your Next Project</h2>
               <p className="text-lg mb-6 opacity-90">
-                Visit our store to explore our full yarn collection and get expert advice
+                Visit our store to explore our full yarn collection and get friendly advice
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="secondary" size="lg" data-testid="button-yarns-visit">
-                  Visit Store
+                <Button variant="secondary" size="lg" data-testid="button-curtains-book">
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-7 h-7 mr-2 object-contain"
+                  />
+                  WhatsApp Us!
                 </Button>
                 <Link href="/services">
-                  <Button variant="outline" size="lg" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                    View All Services
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button variant="outline" size="lg" className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white">
+                    <Phone className="w-10 h-10 mr-2" />
+                    Call Us!
+
                   </Button>
                 </Link>
               </div>
