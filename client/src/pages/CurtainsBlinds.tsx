@@ -31,8 +31,7 @@ export default function CurtainsBlinds() {
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mb-6">
               Transform your windows with our extensive range of custom curtains and blinds. 
-              Professional measurement and installation included.
-            </p>
+              </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
               {/* WhatsApp Button */}
