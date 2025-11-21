@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, LucideIcon } from 'lucide-react';
 import { Link } from 'wouter';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 interface ServiceCardProps {
   title: string;
@@ -37,7 +38,7 @@ export default function ServiceCard({ title, description, features, image, icon:
         <p className="text-muted-foreground" data-testid={`text-service-description-${title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
           {description}
         </p>
-        
+
         <ul className="space-y-2">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start space-x-2 text-sm">
@@ -46,18 +47,45 @@ export default function ServiceCard({ title, description, features, image, icon:
             </li>
           ))}
         </ul>
-        
-        <Link href={href}>
-          <Button 
-            variant="ghost" 
-            className="w-full justify-between p-0 h-auto text-primary hover:text-primary"
-            data-testid={`button-service-learn-more-${title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+
+        {/* ⭐ NEW BUTTON ROW ⭐ */}
+        <div className="flex items-center justify-between gap-3">
+
+          {/* Learn More (Left) */}
+          <Link href={href} className="flex-1">
+            <Button 
+              variant="ghost" 
+              className="w-full justify-between p-0 h-auto text-primary hover:text-primary"
+              data-testid={`button-service-learn-more-${title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+            >
+              <span className="font-medium">Learn More</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+
+          {/* WhatsApp (Right) */}
+          <a 
+            href="https://wa.me/27767864444"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
           >
-            <span className="font-medium">Learn More</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </Link>
+            <Button 
+              size="sm"
+              className="w-full bg-brand-green text-brand-blue hover:bg-brand-light-blue flex items-center justify-center gap-2"
+            >
+              <img 
+                src={whatsappIcon}
+                alt="WhatsApp"
+                className="w-5 h-5 object-contain"
+              />
+              <span className="font-medium">WhatsApp</span>
+            </Button>
+          </a>
+
+        </div>
       </CardContent>
+
     </Card>
   );
 }

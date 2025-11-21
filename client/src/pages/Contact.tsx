@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
 export default function Contact() {
   return (
@@ -113,15 +115,34 @@ export default function Contact() {
               Connect with us on WhatsApp for instant responses to your questions about our services, 
               pricing, or availability.
             </p>
-            <button 
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-medium hover-elevate inline-flex items-center space-x-2"
-              data-testid="button-whatsapp"
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.017 2c-5.511 0-9.977 4.466-9.977 9.977 0 1.763.461 3.416 1.27 4.849l-1.31 4.782 4.901-1.286c1.383.744 2.964 1.155 4.616 1.155 5.511 0 9.977-4.466 9.977-9.977S17.528 2 12.017 2zm5.169 14.157c-.235.66-1.381 1.274-1.908 1.319-.525.045-1.028.084-1.528-.096-.3-.108-.686-.252-1.175-.441-2.056-.796-3.406-2.858-3.509-2.989-.103-.131-.844-1.123-.844-2.142 0-1.019.528-1.518.715-1.728.187-.21.408-.262.544-.262.136 0 .272.001.391.007.125.007.294-.047.459.349.167.4.568 1.387.618 1.488.05.101.083.22.017.355-.067.135-.1.219-.2.336-.101.117-.212.261-.303.351-.101.1-.206.208-.089.408.117.2.52.857 1.116 1.387.766.682 1.413.894 1.613.994.2.1.317.084.434-.05.117-.133.5-.583.633-.783.133-.2.267-.167.45-.1.183.067 1.159.546 1.358.646.2.1.333.15.383.233.05.083.05.483-.185 1.143z"/>
-              </svg>
-              <span>Message us on WhatsApp</span>
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/27767864444"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="inline-flex items-center text-xl px-8 py-4"
+                >
+                  <img
+                    src={whatsappIcon}
+                    alt="WhatsApp"
+                    className="w-10 h-10 mr-3 object-contain"
+                  />
+                  WhatsApp Us!
+                </Button>
+
+              </a>
+
+              {/* Call Us Button */}
+              
+
+            </div>
           </div>
         </div>
       </section>

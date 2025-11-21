@@ -7,8 +7,9 @@ import { Button } from '@/components/ui/button';
 import { Blinds, Scissors, Palette, Bed, Zap, ArrowRight, Phone } from 'lucide-react';
 import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
 
+
 // Import generated images
-import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
+import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.jpg';
 import fabricsImage from '@assets/generated_images/Fabric_swatches_collection_53280bf0.png';
 import yarnImage from '@assets/generated_images/Yarn_collection_display_c9cdaaf9.png';
 import beddingImage from '@assets/generated_images/Luxury_bedding_lifestyle_a1d84396.png';
@@ -113,18 +114,44 @@ export default function Services() {
             for your home. Each service combines quality craftsmanship with premium materials.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" data-testid="button-services-quote">
-              Get Quick Quote
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={handleViewAllWork}
-              data-testid="button-services-gallery"
+
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/27767864444"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              View Our Work
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                data-testid="button-curtains-book"
+                className="inline-flex items-center"
+              >
+                <img 
+                  src={whatsappIcon} 
+                  alt="WhatsApp" 
+                  className="w-7 h-7 mr-2 object-contain"
+                />
+                WhatsApp Us!
+              </Button>
+            </a>
+
+            {/* Call Us Button */}
+            <a
+              href="tel:0767864444"
+              className="inline-block"
+            >
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white inline-flex items-center"
+              >
+                <Phone className="w-10 h-10 mr-2" />
+                Call Us!
+              </Button>
+            </a>
+
           </div>
         </div>
       </section>
@@ -188,7 +215,7 @@ export default function Services() {
                 4
               </div>
               <h3 className="text-xl font-semibold mb-3">Professional Installation</h3>
-              <p className="text-muted-foreground">Perfect fit and finish with our 5-year quality guarantee</p>
+              <p className="text-muted-foreground">Perfect fit and finish</p>
             </div>
           </div>
         </div>

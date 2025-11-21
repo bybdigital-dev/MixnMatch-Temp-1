@@ -136,22 +136,46 @@ export default function YarnsWool() {
                 Visit our store to explore our full yarn collection and get friendly advice
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="secondary" size="lg" data-testid="button-curtains-book">
-                  <img 
-                    src={whatsappIcon} 
-                    alt="WhatsApp" 
-                    className="w-7 h-7 mr-2 object-contain"
-                  />
-                  WhatsApp Us!
-                </Button>
-                <Link href="/services">
-                  <Button variant="outline" size="lg" className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white">
+
+                {/* WhatsApp Button */}
+                <a
+                  href="https://wa.me/27767864444"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button 
+                    variant="secondary" 
+                    size="lg" 
+                    data-testid="button-curtains-book"
+                    className="inline-flex items-center"
+                  >
+                    <img 
+                      src={whatsappIcon} 
+                      alt="WhatsApp" 
+                      className="w-7 h-7 mr-2 object-contain"
+                    />
+                    WhatsApp Us!
+                  </Button>
+                </a>
+
+                {/* Call Us Button */}
+                <a
+                  href="tel:0724739201"
+                  className="inline-block"
+                >
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white inline-flex items-center"
+                  >
                     <Phone className="w-10 h-10 mr-2" />
                     Call Us!
-
                   </Button>
-                </Link>
+                </a>
+
               </div>
+
             </CardContent>
           </Card>
         </div>

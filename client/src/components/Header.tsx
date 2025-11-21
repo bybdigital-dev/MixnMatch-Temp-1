@@ -24,7 +24,7 @@ export default function Header() {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'About', path: '/about' },
+    // { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -70,7 +70,7 @@ export default function Header() {
               data-testid="button-book-quote"
             >
               <Phone className="w-4 h-4" />
-              <span>Book Quick Quote</span>
+              <span>Contact us</span>
             </Button>
 
             {/* Mobile Menu Button */}
@@ -111,7 +111,7 @@ export default function Header() {
                 data-testid="mobile-button-book-quote"
               >
                 <Phone className="w-4 h-4" />
-                <span>Book Quick Quote</span>
+                <span>Contact us</span>
               </Button>
             </nav>
           </div>

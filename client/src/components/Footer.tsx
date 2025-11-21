@@ -71,13 +71,13 @@ export default function Footer() {
                   Gallery
                 </span>
               </Link>
-              <Link href="/about" data-testid="footer-link-about">
+              {/*<Link href="/about" data-testid="footer-link-about">
                 <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
                   About Us
                 </span>
-              </Link>
+              </Link> */}
               <Link href="/contact" data-testid="footer-link-contact">
-                <span className="text-muted-foreground hover:text-brand-green transition-colors cursor-pointer block">
+                <span className="text-muted-foreground hover:text-brand-red transition-colors cursor-pointer block">
                   Contact
                 </span>
               </Link>
