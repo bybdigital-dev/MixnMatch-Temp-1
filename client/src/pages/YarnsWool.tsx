@@ -33,9 +33,46 @@ export default function YarnsWool() {
               Discover our extensive collection of premium yarns for knitting and crochet. 
               From cotton to wool, everything you need for your next project.
             </p>
-            <Button size="lg" data-testid="button-yarns-shop">
-              Browse Collection
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/27767864444"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button 
+                  variant="secondary" 
+                  size="lg" 
+                  data-testid="button-curtains-book"
+                  className="inline-flex items-center"
+                >
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-7 h-7 mr-2 object-contain"
+                  />
+                  WhatsApp Us!
+                </Button>
+              </a>
+
+              {/* Call Us Button */}
+              <a
+                href="tel:0724739201"
+                className="inline-block"
+              >
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white inline-flex items-center"
+                >
+                  <Phone className="w-10 h-10 mr-2" />
+                  Call Us!
+                </Button>
+              </a>
+
+            </div>
           </div>
         </div>
       </section>

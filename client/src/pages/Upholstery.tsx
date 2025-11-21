@@ -33,9 +33,46 @@ export default function Upholstery() {
               Give your cherished furniture new life with professional reupholstery. 
               Expert craftsmanship meets beautiful fabrics.
             </p>
-            <Button size="lg" data-testid="button-upholstery-quote">
-              Get Quick Quote
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/27767864444"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button 
+                  variant="secondary" 
+                  size="lg" 
+                  data-testid="button-curtains-book"
+                  className="inline-flex items-center"
+                >
+                  <img 
+                    src={whatsappIcon} 
+                    alt="WhatsApp" 
+                    className="w-7 h-7 mr-2 object-contain"
+                  />
+                  WhatsApp Us!
+                </Button>
+              </a>
+
+              {/* Call Us Button */}
+              <a
+                href="tel:0767864444"
+                className="inline-block"
+              >
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="bg-brand-red border-primary-foreground text-primary-foreground hover:bg-brand-light-blue hover:text-white inline-flex items-center"
+                >
+                  <Phone className="w-10 h-10 mr-2" />
+                  Call Us!
+                </Button>
+              </a>
+
+            </div>
           </div>
         </div>
       </section>

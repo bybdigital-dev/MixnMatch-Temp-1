@@ -69,7 +69,7 @@ export default function Services() {
         "Egyptian cotton and linen options",
         "Complete size chart available",
         "Thread count guarantee",
-        "Care instructions included",
+        "Care instructions",
         "Custom sizing available",
         "Matching pillowcase sets"
       ],

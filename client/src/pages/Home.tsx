@@ -6,12 +6,12 @@ import ProductGallery from '@/components/ProductGallery';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Blinds, Scissors, Palette, Bed, Volleyball, ArrowRight } from 'lucide-react';
+import { Blinds, Scissors, Palette, Bed, Volleyball, ArrowRight, Zap } from 'lucide-react';
 
 // Import generated images
-import heroImage from '@assets/generated_images/Hero_living_room_curtains_763d6b70.png';
 import fabricsImage from '@assets/generated_images/Fabric_swatches_collection_53280bf0.png';
 import yarnImage from '@assets/generated_images/Yarn_collection_display_c9cdaaf9.png';
+import yarn1Image from '@assets/generated_images/Yarns_gallery_crop.jpg';
 import beddingImage from '@assets/generated_images/Luxury_bedding_lifestyle_a1d84396.png';
 import upholsteryImage from '@assets/generated_images/Upholstery_before_after_e6f2b2f5.png';
 import curtainsblindsImage from '@assets/generated_images/CurtainsBlinds.jpg';
@@ -65,12 +65,25 @@ export default function Home() {
       features: [
         "Egyptian cotton options",
         "Complete size chart available",
-        "Care instructions included",
+        "Care instructions",
         "Thread count guarantee"
       ],
       image: beddingImage,
       icon: Bed,
       href: "/bedding-linen"
+    },
+    {
+      title: "Yarns & Wool",
+      description: "Discover our extensive collection of knitting and crochet yarns. From cotton and wool to acrylic blends, we have materials for every project and skill level.",
+      features: [
+        "Cotton, wool, and acrylic varieties available in-store",
+        "Multiple weights and textures",
+        "Yarn color gallery display",
+        "Hook and needle size guidance"
+      ],
+      image: yarn1Image,
+      icon: Zap,
+      href: "/yarns-wool"
     }
   ];
 
