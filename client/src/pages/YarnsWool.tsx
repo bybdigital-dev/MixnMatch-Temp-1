@@ -37,7 +37,7 @@ export default function YarnsWool() {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/27767864444"
+                href="https://wa.me/27724739201"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -176,7 +176,7 @@ export default function YarnsWool() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/27767864444"
+                  href="https://wa.me/27724739201"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block"

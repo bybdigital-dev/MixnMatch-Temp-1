@@ -39,30 +39,38 @@ export default function ContactForm() {
             <div className="space-y-4">
 
               {/* PHONE */}
-              <div className="flex items-center space-x-3">
-                <div className="bg-primary/10 p-2 rounded-full">
+              <div className="flex items-start space-x-3">
+
+                {/* Icon */}
+                <div className="bg-primary/10 p-2 rounded-full flex-shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
 
-                <a
-                  href="tel:0123452852"
-                  className="block"
-                >
+                {/* Content */}
+                <div className="space-y-1">
                   <p className="font-semibold">Phone</p>
-                  <p className="text-muted-foreground">012 345 2852</p>
-                </a>
 
-                
-                <a
-                  href="tel:0833064444"
-                  className="block"
-                >
-                  <p className="font-semibold text-muted/30">.</p>
-                  <p className="text-muted-foreground">/  083 306 4444</p>
-                </a>
+                  <div className="flex items-center space-x-2">
+                    <a
+                      href="tel:0123452852"
+                      className="text-muted-foreground hover:text-brand-green"
+                    >
+                      012 345 2852
+                    </a>
 
-                
+                    <span className="text-muted-foreground">/</span>
+
+                    <a
+                      href="tel:0833064444"
+                      className="text-muted-foreground hover:text-brand-red"
+                    >
+                      083 306 4444
+                    </a>
+                  </div>
+                </div>
+
               </div>
+
 
               {/* EMAIL */}
               <div className="flex items-center space-x-3">
@@ -75,32 +83,49 @@ export default function ContactForm() {
                   className="block"
                 >
                   <p className="font-semibold">Email</p>
-                  <p className="text-muted-foreground">ridwan.j@telkomsa.net</p>
+                  <p className="text-muted-foreground hover:text-brand-red"
+                    >ridwan.j@telkomsa.net</p>
                 </a>
               </div>
 
             
               {/* WHATSAPP */}
-              <div className="flex items-center space-x-3">
-                <a
-                  href="https://wa.me/27767864444"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition"
-                >
-                  <MessageCircle className="w-5 h-5 text-primary" />
-                </a>
+              <div className="flex items-start space-x-3">
 
-                <a
-                  href="https://wa.me/27767864444"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
+                {/* Icon (not a link) */}
+                <div className="bg-primary/10 p-2 rounded-full flex-shrink-0">
+                  <MessageCircle className="w-5 h-5 text-primary" />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-1">
                   <p className="font-semibold">WhatsApp</p>
-                  <p className="text-muted-foreground">076 786 4444</p>
-                </a>
+
+                  <div className="flex items-center space-x-2">
+                    <a
+                      href="https://wa.me/27767864444"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-brand-green"
+                    >
+                      076 786 4444
+                    </a>
+
+                    <span className="text-muted-foreground">/</span>
+
+                    <a
+                      href="https://wa.me/27724739201"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-brand-red"
+                    >
+                      072 473 9201
+                    </a>
+                  </div>
+                </div>
+
               </div>
+
 
                 
             </div>

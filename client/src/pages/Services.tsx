@@ -89,7 +89,8 @@ export default function Services() {
       ],
       image: yarnImage,
       icon: Zap,
-      href: "/yarns-wool"
+      href: "/yarns-wool",
+      whatsappNumber: "2774739201"
     }
   ];
 

@@ -7,6 +7,8 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Blinds, Scissors, Palette, Bed, Volleyball, ArrowRight, Zap } from 'lucide-react';
+import FeaturedProductsGridCarousel from "@/components/FeaturedProductsGridCarousel";
+
 
 // Import generated images
 import fabricsImage from '@assets/generated_images/Fabric_swatches_collection_53280bf0.png';
@@ -15,6 +17,15 @@ import yarn1Image from '@assets/generated_images/Yarns_gallery_crop.jpg';
 import beddingImage from '@assets/generated_images/Luxury_bedding_lifestyle_a1d84396.png';
 import upholsteryImage from '@assets/generated_images/Upholstery_before_after_e6f2b2f5.png';
 import curtainsblindsImage from '@assets/generated_images/CurtainsBlinds.jpg';
+import cutfoamImage from '@assets/generated_images/cutfoam.jpeg';
+import dressfabricsImage from '@assets/generated_images/Dress_fabric.jpg';
+import blindsImage from '@assets/generated_images/Blinds_Combined.jpg';
+import curtainsImage from '@assets/generated_images/curtains.jpg';
+import headboardImage from '@assets/generated_images/headboard.jpeg';
+import yarnsImage from '@assets/generated_images/yarns.jpg';
+'@assets/generated_images/yarns.jpeg';
+import customcurtainImage from '@assets/generated_images/custom_curtain.jpg';
+
 
 
 export default function Home() {
@@ -83,7 +94,8 @@ export default function Home() {
       ],
       image: yarn1Image,
       icon: Zap,
-      href: "/yarns-wool"
+      href: "/yarns-wool",
+      whatsappNumber: "27724739201"
     }
   ];
 
@@ -114,10 +126,10 @@ export default function Home() {
   const featuredProducts = [
     {
       id: '1',
-      title: 'Premium Linen Collection',
+      title: 'Dress fabrics',
       category: 'Fabrics',
-      image: fabricsImage,
-      description: 'High-quality linen in various textures'
+      image: dressfabricsImage,
+      description: 'High-quality fabrics in various textures'
     },
     {
       id: '2',
@@ -132,8 +144,52 @@ export default function Home() {
       category: 'Bedding',
       image: beddingImage,
       description: 'Luxury sheets and duvet covers'
+    },
+    {
+      id: '4',
+      title: 'Foam',
+      category: 'Upholstery',
+      image: cutfoamImage,
+      description: 'Foam cut to size'
+    },
+    {
+      id: '5',
+      title: 'Blinds',
+      category: 'Curtains & Blinds',
+      image: blindsImage,
+      description: 'Variety blinds'
+    },
+    {
+      id: '6',
+      title: 'Ready made curtains',
+      category: 'Curtains & Blinds',
+      image: curtainsImage,
+      description: 'Various colours and styles'
+    },
+    {
+      id: '7',
+      title: 'Customs headboards',
+      category: 'Bedding',
+      image: headboardImage,
+      description: 'Custom size headboards'
+    },
+    {
+      id: '8',
+      title: 'Yarns',
+      category: 'Yarns',
+      image: yarnsImage,
+      description: 'Various yarns'
+    },
+    {
+      id: '9',
+      title: 'Custom made curtains',
+      category: 'Curtains & Blinds',
+      image: customcurtainImage,
+      description: 'Made according to specification'
     }
   ];
+
+
 
   const handleViewAllServices = () => {
     window.location.hash = '/services';
@@ -175,11 +231,12 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <ProductGallery 
-        title="Featured Products" 
-        items={featuredProducts}
-        categories={['Fabrics', 'Yarns', 'Bedding']}
+      <FeaturedProductsGridCarousel
+        title="Featured Products"
+        products={featuredProducts}
+        itemsPerPage={4}
       />
+
 
 
       {/*

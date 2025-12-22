@@ -11,9 +11,10 @@ interface ServiceCardProps {
   image: string;
   icon: LucideIcon;
   href?: string;
+  whatsappNumber?: string;
 }
 
-export default function ServiceCard({ title, description, features, image, icon: Icon, href = '#' }: ServiceCardProps) {
+export default function ServiceCard({ title, description, features, image, icon: Icon, href = '#', whatsappNumber = '27767864444', }: ServiceCardProps) {
   return (
     <Card className="hover-elevate transition-all duration-300 group overflow-hidden">
       <div className="relative h-48 overflow-hidden">
@@ -65,7 +66,7 @@ export default function ServiceCard({ title, description, features, image, icon:
 
           {/* WhatsApp (Right) */}
           <a 
-            href="https://wa.me/27767864444"
+            href={`https://wa.me/${whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1"

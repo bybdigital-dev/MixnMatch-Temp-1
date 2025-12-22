@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Phone, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import whatsappIcon from '@assets/generated_images/Whatsapp_icon.png';
+import heroBackground from '@assets/generated_images/Store_Photo.jpeg';
 
 export default function Contact() {
   return (
@@ -12,17 +13,23 @@ export default function Contact() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-24 bg-muted/30">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-serif font-bold mb-6" data-testid="text-contact-page-heading">
-            Contact Us
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your home? We'd love to hear about your project. 
-            Get in touch for a quick consultation and quote.
-          </p>
-        </div>
+      <section className="relative min-h-[60vh] overflow-hidden">
+
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${heroBackground})`,
+          }}
+        />
+
+        {/* Mute / Overlay */}
+        <div className="absolute inset-0 bg-muted/" />
+
       </section>
+
+
+
 
       {/* Contact Information Cards */}
       <section className="py-16">
@@ -46,7 +53,7 @@ export default function Contact() {
                   <MessageCircle className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">WhatsApp</h3>
-                <p className="text-muted-foreground">076 786 4444</p>
+                <p className="text-muted-foreground">076 786 4444 / 072 473 9201</p>
                 <p className="text-sm text-muted-foreground mt-2">We would love to chat to you</p>
               </CardContent>
             </Card>

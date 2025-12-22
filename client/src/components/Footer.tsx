@@ -104,34 +104,24 @@ export default function Footer() {
               
               <div className="flex items-center space-x-2">
 
-                <a
-                  href="tel:0123452852"
-                  className="flex-shrink-0 hover:text-primary transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-primary" />
-                </a>
+                {/* Phone Icon (no link) */}
+                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
 
+                {/* First phone number */}
                 <a
                   href="tel:0123452852"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-brand-red"
                 >
                   012 345 2852
                 </a>
 
-              </div>
+                {/* Separator */}
+                <span className="text-muted-foreground">/</span>
 
-              <div className="flex items-center space-x-2">
-
-                <a
-                  href="tel:0123452852"
-                  className="flex-shrink-0 hover:text-primary transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-primary" />
-                </a>
-
+                {/* Second phone number */}
                 <a
                   href="tel:0833064444"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-brand-green"
                 >
                   083 306 4444
                 </a>
@@ -139,23 +129,33 @@ export default function Footer() {
               </div>
 
 
+
               <div className="flex items-center space-x-2">
 
+                {/* WhatsApp Icon (no link) */}
+                <MessageCircle className="w-4 h-4 text-primary flex-shrink-0" />
+
+                {/* First WhatsApp number */}
                 <a
-                  href="https://wa.me/27767864444"
-                  className="flex-shrink-0 hover:text-primary transition-colors"
+                  href="https://wa.me/27797864444"
+                  className="text-muted-foreground hover:text-brand-red"
                 >
-                  <MessageCircle className="w-4 h-4 text-primary" />
+                  079 786 4444
                 </a>
 
+                {/* Separator */}
+                <span className="text-muted-foreground">/</span>
+
+                {/* Second WhatsApp number */}
                 <a
-                  href="https://wa.me/27767864444"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  href="https://wa.me/27724739201"
+                  className="text-muted-foreground hover:text-brand-green"
                 >
-                  076 786 4444
+                  072 473 9201
                 </a>
 
               </div>
+
 
 
               
@@ -174,7 +174,7 @@ export default function Footer() {
 
                 <a
                   href="mailto:ridwan.j@telkomsa.net"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-brand-green"
                 >
                   ridwan.j@telkomsa.net
                 </a>
@@ -194,7 +194,7 @@ export default function Footer() {
 
                 <a
                   href="#/contact"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-brand-red"
                 >
                   Shop 5<br />
                   Park Shopping Centre<br />
@@ -228,7 +228,7 @@ export default function Footer() {
               href="https://buildyourbrand.web.za/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline hover:text-brand-green"
             >
               BYB Digital
             </a>
