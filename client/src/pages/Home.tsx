@@ -168,7 +168,7 @@ export default function Home() {
     },
     {
       id: '7',
-      title: 'Customs headboards',
+      title: 'Custom made headboards',
       category: 'Bedding',
       image: headboardImage,
       description: 'Custom size headboards'
