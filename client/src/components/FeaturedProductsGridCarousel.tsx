@@ -13,7 +13,7 @@ type FeaturedProduct = {
 export default function FeaturedProductsGridCarousel({
   title = "Featured Products",
   products,
-  itemsPerPage = 4, // 2 rows x 3 cols on desktop
+  itemsPerPage = 6, // 2 rows x 3 cols on desktop
 }: {
   title?: string;
   products: FeaturedProduct[];

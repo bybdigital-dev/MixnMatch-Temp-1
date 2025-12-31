@@ -16,6 +16,15 @@ import beddingImage from '@assets/generated_images/Luxury_bedding_lifestyle_a1d8
 import upholsteryImage from '@assets/generated_images/Upholstery_before_after_e6f2b2f5.png';
 import blindsImage from '@assets/generated_images/Blinds_Combined.jpg';
 import dressImage from '@assets/generated_images/Dress_fabric.jpg';
+import romanblindsImage from '@assets/generated_images/Roman_blinds.jpeg';
+import sunscreenblindsImage from '@assets/generated_images/Sunscreen_Blockout_blinds.jpeg';
+import verticalblindsImage from '@assets/generated_images/vertical_blinds.jpeg';
+import blinds2Image from '@assets/generated_images/blinds.jpeg';
+import redcouchImage from '@assets/generated_images/red_couch.jpeg';
+import leatherwingbackImage from '@assets/generated_images/leather_wingback.jpeg';
+import headboard2Image from '@assets/generated_images/headboard_photo.jpeg';
+import customwingbackImage from '@assets/generated_images/custom_wingback.jpeg';
+import customcurtainImage from '@assets/generated_images/custom_curtain.jpg';
 
 
 export default function Gallery() {
@@ -76,6 +85,69 @@ export default function Gallery() {
       category: 'Yarns & Wool',
       image: yarnImage,
       description: 'Soft merino wool in various weights and colors'
+    },
+    {
+      id: '9',
+      title: 'Custom made curtains',
+      category: 'Curtains & Blinds',
+      image: customcurtainImage,
+      description: 'Made according to specification'
+    },
+    {
+      id: '10',
+      title: 'Roman blinds',
+      category: 'Curtains & Blinds',
+      image: romanblindsImage,
+      description: 'Available in any material'
+    },
+    {
+      id: '11',
+      title: 'Sunscreen & Blockout blinds',
+      category: 'Curtains & Blinds',
+      image: sunscreenblindsImage,
+      description: 'Custom made blinds'
+    },
+    {
+      id: '12',
+      title: 'Vertical blinds',
+      category: 'Curtains & Blinds',
+      image: verticalblindsImage,
+      description: 'Custom made blinds'
+    },
+    {
+      id: '13',
+      title: 'Blinds',
+      category: 'Curtains & Blinds',
+      image: blinds2Image,
+      description: 'Custom made blinds'
+    },
+    {
+      id: '14',
+      title: 'Couch upholstery',
+      category: 'Upholstery',
+      image: redcouchImage,
+      description: 'Custom colours available'
+    },
+    {
+      id: '15',
+      title: 'Wingback chair upholstery',
+      category: 'Upholstery',
+      image: leatherwingbackImage,
+      description: 'Custom leathers'
+    },
+    {
+      id: '16',
+      title: 'Custom headboard',
+      category: 'Bedding & Linen',
+      image: headboard2Image,
+      description: 'Custom made accord to specification'
+    },
+    {
+      id: '17',
+      title: 'Custom wingback chair upholstery',
+      category: 'Upholstery',
+      image: customwingbackImage,
+      description: 'Custom colours and materials'
     }
   ];
 
