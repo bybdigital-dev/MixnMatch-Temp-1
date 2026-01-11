@@ -45,7 +45,7 @@ export default function FeaturedProductsGridCarousel({
 
   return (
     <section className="py-16 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-8xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-serif font-bold mb-4">{title}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export default function FeaturedProductsGridCarousel({
             className="absolute left-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-background/80 backdrop-blur border p-2 hover:bg-background"
             aria-label="Previous"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-5 h-20" />
           </button>
 
           {/* Right button */}
@@ -71,7 +71,7 @@ export default function FeaturedProductsGridCarousel({
             className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rounded-full bg-background/80 backdrop-blur border p-2 hover:bg-background"
             aria-label="Next"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-5 h-20" />
           </button>
 
           {/* Viewport */}
@@ -85,16 +85,21 @@ export default function FeaturedProductsGridCarousel({
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="grid grid-cols-2 lg:grid-cols-3 gap-6"
+                className="grid grid-cols-2 md:grid-cols-3 gap-5"
               >
                 {visible.map((p) => (
                   <article
                     key={`${p.id}-${startIndex}`}
                     className="rounded-xl border bg-card overflow-hidden hover:shadow-md transition-shadow"
                   >
-                    <div className="h-40 overflow-hidden">
-                      <img src={p.image} alt={p.title} className="w-full h-full object-cover" />
+                    <div className="aspect-square w-full overflow-hidden">
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
+
                     <div className="p-4 space-y-1">
                       <p className="text-xs text-muted-foreground">{p.category}</p>
                       <h3 className="font-semibold">{p.title}</h3>
