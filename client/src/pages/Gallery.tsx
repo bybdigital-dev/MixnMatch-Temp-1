@@ -25,6 +25,30 @@ import leatherwingbackImage from '@assets/generated_images/leather_wingback.jpeg
 import headboard2Image from '@assets/generated_images/headboard_photo.jpeg';
 import customwingbackImage from '@assets/generated_images/custom_wingback.jpeg';
 import customcurtainImage from '@assets/generated_images/custom_curtain.jpg';
+import upholstery1Image from '@assets/generated_images/Upholstery_1.jpeg';
+import upholstery2Image from '@assets/generated_images/Upholstery_2.jpeg';
+import upholstery3Image from '@assets/generated_images/Upholstery_3.jpeg';
+import upholstery4Image from '@assets/generated_images/Upholstery_4.jpeg';
+import upholstery5Image from '@assets/generated_images/Upholstery_5.jpeg';
+import upholstery6Image from '@assets/generated_images/Upholstery_6.jpeg';
+import upholstery7Image from '@assets/generated_images/Upholstery_7.jpeg';
+import upholstery8Image from '@assets/generated_images/Upholstery_8.jpeg';
+import upholstery9Image from '@assets/generated_images/Upholstery_9.jpeg';
+import upholstery10Image from '@assets/generated_images/Upholstery_10.jpeg';
+import upholstery11Image from '@assets/generated_images/Upholstery_11.jpeg';
+import upholstery12Image from '@assets/generated_images/Upholstery_12.jpeg';
+import upholstery13Image from '@assets/generated_images/Upholstery_13.jpeg';
+import wool1Image from '@assets/generated_images/Wool_1.jpeg';
+import wool2Image from '@assets/generated_images/Wool_2.jpeg';
+import wool3Image from '@assets/generated_images/Wool_3.jpeg';
+import wool4Image from '@assets/generated_images/Wool_4.jpeg';
+import wool5Image from '@assets/generated_images/Wool_5.jpeg';
+import wool6Image from '@assets/generated_images/Wool_6.jpeg';
+import wool7Image from '@assets/generated_images/Wool_7.jpeg';
+import wool8Image from '@assets/generated_images/Wool_8.jpeg';
+import wool9Image from '@assets/generated_images/Wool_9.jpeg';
+import wool10Image from '@assets/generated_images/Wool_10.jpeg';
+
 
 
 export default function Gallery() {
@@ -148,6 +172,160 @@ export default function Gallery() {
       category: 'Upholstery',
       image: customwingbackImage,
       description: 'Custom colours and materials'
+    },
+    {
+      id: '18',
+      title: 'Custom wingback chair upholstery',
+      category: 'Upholstery',
+      image: upholstery1Image,
+      description: 'Custom materials'
+    },
+    {
+      id: '19',
+      title: 'Custom dining chair upholstery',
+      category: 'Upholstery',
+      image: upholstery2Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '22',
+      title: 'Custom dining chair upholstery',
+      category: 'Upholstery',
+      image: upholstery5Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '23',
+      title: 'Custom dining chair upholstery',
+      category: 'Upholstery',
+      image: upholstery6Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '25',
+      title: 'Dining chair foam replacement',
+      category: 'Upholstery',
+      image: upholstery8Image,
+      description: 'Custome foam replacement'
+    },
+    {
+      id: '21',
+      title: 'Custom office chair upholstery',
+      category: 'Upholstery',
+      image: upholstery4Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '20',
+      title: 'Custom foam cutting',
+      category: 'Upholstery',
+      image: upholstery3Image,
+      description: 'On site foam cutting'
+    },
+    {
+      id: '24',
+      title: 'Custom chair upholstery',
+      category: 'Upholstery',
+      image: upholstery7Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '26',
+      title: 'Custom counter chair upholstery',
+      category: 'Upholstery',
+      image: upholstery9Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '27',
+      title: 'Custom office chair upholstery',
+      category: 'Upholstery',
+      image: upholstery10Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '30',
+      title: 'Custom office chair upholstery',
+      category: 'Upholstery',
+      image: upholstery13Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '28',
+      title: 'Custom headboard upholstery',
+      category: 'Upholstery',
+      image: upholstery11Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '29',
+      title: 'Custom couch upholstery',
+      category: 'Upholstery',
+      image: upholstery12Image,
+      description: 'Custom colours and materials'
+    },
+    {
+      id: '31',
+      title: 'Coffee Cotton',
+      category: 'Yarns & Wool',
+      image: wool1Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '33',
+      title: 'Coffee Cotton',
+      category: 'Yarns & Wool',
+      image: wool3Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '32',
+      title: 'Pure Gold',
+      category: 'Yarns & Wool',
+      image: wool2Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '34',
+      title: 'Pure Gold',
+      category: 'Yarns & Wool',
+      image: wool8Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '35',
+      title: 'Elite Yarns - Cotton Touch',
+      category: 'Yarns & Wool',
+      image: wool5Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '36',
+      title: 'Elite Yarns - T-Shirt',
+      category: 'Yarns & Wool',
+      image: wool6Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '37',
+      title: 'Alexis 3XL',
+      category: 'Yarns & Wool',
+      image: wool7Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '38',
+      title: 'DK Lurex',
+      category: 'Yarns & Wool',
+      image: wool9Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '39',
+      title: 'Chunky XL',
+      category: 'Yarns & Wool',
+      image: wool10Image,
+      description: 'Various colours and sizes available'
     }
   ];
 
