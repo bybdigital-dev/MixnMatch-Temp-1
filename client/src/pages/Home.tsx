@@ -57,6 +57,28 @@ import wool7Image from '@assets/generated_images/Wool_7.jpeg';
 import wool8Image from '@assets/generated_images/Wool_8.jpeg';
 import wool9Image from '@assets/generated_images/Wool_9.jpeg';
 import wool10Image from '@assets/generated_images/Wool_10.jpeg';
+import blinds3Image from '@assets/generated_images/blinds_1.jpeg';
+import blinds4Image from '@assets/generated_images/blinds_2.jpeg';
+import blinds5Image from '@assets/generated_images/blinds_3.jpeg';
+import blinds6Image from '@assets/generated_images/blinds_4.jpeg';
+import blinds7Image from '@assets/generated_images/blinds_5.jpeg';
+import blinds8Image from '@assets/generated_images/blinds_6.jpeg';
+import blinds9Image from '@assets/generated_images/blinds_7.jpeg';
+import blinds10Image from '@assets/generated_images/blinds_8.jpeg';
+import curtains1Image from '@assets/generated_images/curtains_1.jpeg';
+import curtains2Image from '@assets/generated_images/curtains_2.jpeg';
+import curtains3Image from '@assets/generated_images/curtains_3.jpeg';
+import curtains4Image from '@assets/generated_images/curtains_4.jpeg';
+import curtains5Image from '@assets/generated_images/curtains_5.jpeg';
+import upholstery14Image from '@assets/generated_images/Upholstery_14.jpeg';
+import upholstery15Image from '@assets/generated_images/Upholstery_15.jpeg';
+import upholstery16Image from '@assets/generated_images/Upholstery_16.jpeg';
+import upholstery17Image from '@assets/generated_images/Upholstery_17.jpeg';
+import upholstery18Image from '@assets/generated_images/Upholstery_18.jpeg';
+import wool11Image from '@assets/generated_images/Wool_11.jpeg';
+import wool12Image from '@assets/generated_images/Wool_12.jpeg';
+import wool13Image from '@assets/generated_images/Wool_13.jpeg';
+import wool14Image from '@assets/generated_images/Wool_14.jpeg';
 
 
 
@@ -427,6 +449,160 @@ export default function Home() {
       title: 'Chunky XL',
       category: 'Yarns & Wool',
       image: wool10Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '40',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds3Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '41',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds4Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '42',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds5Image,
+      description: 'Available in sheer weave'
+    },
+    {
+      id: '43',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds6Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '44',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds7Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '45',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds8Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '46',
+      title: 'Roller blinds',
+      category: 'Curtains & Blinds',
+      image: blinds9Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '47',
+      title: 'Measuring of blinds and curtains',
+      category: 'Curtains & Blinds',
+      image: blinds10Image,
+      description: 'We do measurements on site'
+    },
+    {
+      id: '48',
+      title: 'Curtains',
+      category: 'Curtains & Blinds',
+      image: curtains1Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '49',
+      title: 'Curtains',
+      category: 'Curtains & Blinds',
+      image: curtains2Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '50',
+      title: 'Curtains',
+      category: 'Curtains & Blinds',
+      image: curtains3Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '51',
+      title: 'Curtains',
+      category: 'Curtains & Blinds',
+      image: curtains4Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '52',
+      title: 'Curtains',
+      category: 'Curtains & Blinds',
+      image: curtains5Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '53',
+      title: 'Beanbag refill',
+      category: 'Upholstery',
+      image: upholstery14Image,
+      description: 'Polystyrene Filling available'
+    },
+    {
+      id: '54',
+      title: 'Chair upholstery',
+      category: 'Upholstery',
+      image: upholstery15Image,
+      description: 'Custom chair upholstery'
+    },
+    {
+      id: '55',
+      title: 'Outdoor cushions',
+      category: 'Upholstery',
+      image: upholstery16Image,
+      description: 'Chill and relax on our custom outdoor cushions'
+    },
+    {
+      id: '56',
+      title: 'Antique chair',
+      category: 'Upholstery',
+      image: upholstery17Image,
+      description: 'We do it all'
+    },
+    {
+      id: '57',
+      title: 'Antique chair',
+      category: 'Upholstery',
+      image: upholstery18Image,
+      description: 'Custom upholstery of antique chair'
+    },
+    {
+      id: '58',
+      title: 'Charity wools',
+      category: 'Yarns & Wool',
+      image: wool11Image,
+      description: 'Double knit various colours available'
+    },
+    {
+      id: '59',
+      title: 'Pure gold',
+      category: 'Yarns & Wool',
+      image: wool12Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '60',
+      title: 'Glitter wools',
+      category: 'Yarns & Wool',
+      image: wool13Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '61',
+      title: 'Pure gold',
+      category: 'Yarns & Wool',
+      image: wool14Image,
       description: 'Various colours and sizes available'
     }
   ];
