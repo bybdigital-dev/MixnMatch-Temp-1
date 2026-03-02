@@ -84,6 +84,7 @@ export default function Contact() {
                 <h3 className="font-semibold text-foreground mb-2">Hours</h3>
                 <p className="text-muted-foreground text-sm">Mon-Thu: 9:00 - 17:30</p>
                 <p className="text-muted-foreground text-sm">Sat: 08:45 - 14:30</p>
+                <p className="text-muted-foreground text-sm">Sun: 09:30 - 13:00</p>
                 <p className="text-muted-foreground text-sm">Fri: Closed Between 12:15 - 14:00</p>
               </CardContent>
             </Card>

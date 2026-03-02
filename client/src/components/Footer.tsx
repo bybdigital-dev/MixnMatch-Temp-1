@@ -210,6 +210,7 @@ export default function Footer() {
                 <div className="text-muted-foreground">
                   <p>Mon-Thu: 9:00 - 17:30</p>
                   <p>Sat: 08:45 - 14:30</p>
+                  <p>Sun: 09:30 - 13:00</p>
                   <p>Fri: Closed Between 12:15 - 14:00</p>
                 </div>
               </div>
