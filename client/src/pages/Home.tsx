@@ -79,6 +79,15 @@ import wool11Image from '@assets/generated_images/Wool_11.jpeg';
 import wool12Image from '@assets/generated_images/Wool_12.jpeg';
 import wool13Image from '@assets/generated_images/Wool_13.jpeg';
 import wool14Image from '@assets/generated_images/Wool_14.jpeg';
+import blinds11Image from '@assets/generated_images/blinds_9.jpeg';
+import blinds12Image from '@assets/generated_images/blinds_10.jpeg';
+import curtains6Image from '@assets/generated_images/curtains_6.jpeg';
+import curtains7Image from '@assets/generated_images/curtains_7.jpeg';
+import upholstery19Image from '@assets/generated_images/upholstery_19.jpeg';
+import upholstery20Image from '@assets/generated_images/upholstery_20.jpeg';
+import upholstery21Image from '@assets/generated_images/upholstery_21.jpeg';
+import upholstery22Image from '@assets/generated_images/upholstery_22.jpeg';
+import wool15Image from '@assets/generated_images/wool_15.jpeg';
 
 
 
@@ -604,6 +613,69 @@ export default function Home() {
       category: 'Yarns & Wool',
       image: wool14Image,
       description: 'Various colours and sizes available'
+    },
+    {
+      id: '62',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds11Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '63',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds12Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '64',
+      title: 'Custom curtains',
+      category: 'Curtains & Blinds',
+      image: curtains6Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '65',
+      title: 'Custom curtains',
+      category: 'Curtains & Blinds',
+      image: curtains7Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '66',
+      title: 'Headboard',
+      category: 'Upholstery',
+      image: upholstery19Image,
+      description: 'Custom made headboard'
+    },
+    {
+      id: '67',
+      title: 'Car seat upholstery',
+      category: 'Upholstery',
+      image: upholstery20Image,
+      description: 'Car seat upholstery'
+    },
+    {
+      id: '68',
+      title: 'Headboard',
+      category: 'Upholstery',
+      image: upholstery21Image,
+      description: 'Custom made headboard'
+    },
+    {
+      id: '69',
+      title: 'Patio set',
+      category: 'Upholstery',
+      image: upholstery22Image,
+      description: 'Reupholstered patio set'
+    },
+    {
+      id: '70',
+      title: 'Charity wool',
+      category: 'Yarns & Wool',
+      image: wool15Image,
+      description: 'Double knit available'
     }
   ];
 
