@@ -80,6 +80,12 @@ import upholstery20Image from '@assets/generated_images/upholstery_20.jpeg';
 import upholstery21Image from '@assets/generated_images/upholstery_21.jpeg';
 import upholstery22Image from '@assets/generated_images/upholstery_22.jpeg';
 import wool15Image from '@assets/generated_images/wool_15.jpeg';
+import wool16Image from '@assets/generated_images/Wool_16.jpeg';
+import wool17Image from '@assets/generated_images/Wool_17.jpeg';
+import wool18Image from '@assets/generated_images/Wool_18.jpeg';
+import wool19Image from '@assets/generated_images/Wool_19.jpeg';
+import fabrics1Image from '@assets/generated_images/Fabrics_1.jpeg';
+import fabrics2Image from '@assets/generated_images/Fabrics_2.jpeg';
 
 
 
@@ -579,6 +585,48 @@ export default function Gallery() {
       category: 'Yarns & Wool',
       image: wool15Image,
       description: 'Double knit available'
+    },
+    {
+      id: '71',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool16Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '72',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool17Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '73',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool18Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '74',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool19Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '75',
+      title: 'Variety of Fabrics',
+      category: 'Fabrics',
+      image: fabrics1Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '76',
+      title: 'Haberdashery',
+      category: 'Fabrics',
+      image: fabrics2Image,
+      description: 'Wide variety of haberdashery'
     }
   ];
 
