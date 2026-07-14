@@ -87,6 +87,31 @@ import wool19Image from '@assets/generated_images/Wool_19.jpeg';
 import fabrics1Image from '@assets/generated_images/Fabrics_1.jpeg';
 import fabrics2Image from '@assets/generated_images/Fabrics_2.jpeg';
 
+import blinds13Image from '@assets/generated_images/blinds_11.jpeg';
+import blinds14Image from '@assets/generated_images/blinds_12.jpeg';
+import blinds15Image from '@assets/generated_images/blinds_13.jpeg';
+import blinds16Image from '@assets/generated_images/blinds_14.jpeg';
+import blinds17Image from '@assets/generated_images/blinds_15.jpeg';
+import blinds18Image from '@assets/generated_images/blinds_16.jpeg';
+import blinds19Image from '@assets/generated_images/blinds_17.jpeg';
+
+
+import curtains8Image from '@assets/generated_images/curtains_8.jpeg';
+import curtains9Image from '@assets/generated_images/curtains_9.jpeg';
+
+
+import wool20Image from '@assets/generated_images/Wool_20.jpeg';
+import wool21Image from '@assets/generated_images/Wool_21.jpeg';
+import wool22Image from '@assets/generated_images/Wool_22.jpeg';
+import wool23Image from '@assets/generated_images/Wool_23.jpeg';
+import wool24Image from '@assets/generated_images/Wool_24.jpeg';
+import wool25Image from '@assets/generated_images/Wool_25.jpeg';
+import wool26Image from '@assets/generated_images/Wool_26.jpeg';
+import wool27Image from '@assets/generated_images/Wool_27.jpeg';
+import wool28Image from '@assets/generated_images/Wool_28.jpeg';
+import wool29Image from '@assets/generated_images/Wool_29.jpeg';
+import wool30Image from '@assets/generated_images/Wool_30.jpeg';
+import wool31Image from '@assets/generated_images/Wool_31.jpeg';
 
 
 
@@ -627,6 +652,153 @@ export default function Gallery() {
       category: 'Fabrics',
       image: fabrics2Image,
       description: 'Wide variety of haberdashery'
+    },
+    {
+      id: '77',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds13Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '78',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds14Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '79',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds15Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '80',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds16Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '81',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds17Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '82',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds18Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '83',
+      title: 'Custom blinds',
+      category: 'Curtains & Blinds',
+      image: blinds19Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '84',
+      title: 'Custom curtains',
+      category: 'Curtains & Blinds',
+      image: curtains8Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '85',
+      title: 'Custom curtains',
+      category: 'Curtains & Blinds',
+      image: curtains9Image,
+      description: 'Various colours and sizes available'
+    },
+    {
+      id: '86',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool20Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '87',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool21Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '88',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool22Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '89',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool23Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '90',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool24Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '91',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool25Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '92',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool26Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '93',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool27Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '94',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool28Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '95',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool29Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '96',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool30Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '97',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool31Image,
+      description: 'Various colours available'
     }
   ];
 
