@@ -119,6 +119,17 @@ import wool28Image from '@assets/generated_images/Wool_28.jpeg';
 import wool29Image from '@assets/generated_images/Wool_29.jpeg';
 import wool30Image from '@assets/generated_images/Wool_30.jpeg';
 import wool31Image from '@assets/generated_images/Wool_31.jpeg';
+import wool32Image from '@assets/generated_images/Wool_32.jpeg';
+import wool33Image from '@assets/generated_images/Wool_33.jpeg';
+import wool34Image from '@assets/generated_images/Wool_34.jpeg';
+import wool35Image from '@assets/generated_images/Wool_35.jpeg';
+import wool36Image from '@assets/generated_images/Wool_36.jpeg';
+import wool37Image from '@assets/generated_images/Wool_37.jpeg';
+import wool38Image from '@assets/generated_images/Wool_38.jpeg';
+import wool39Image from '@assets/generated_images/Wool_39.jpeg';
+import wool40Image from '@assets/generated_images/Wool_40.jpeg';
+import wool41Image from '@assets/generated_images/Wool_41.jpeg';
+
 
 
 
@@ -895,6 +906,76 @@ export default function Home() {
       title: 'Variety Wool',
       category: 'Yarns & Wool',
       image: wool31Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '98',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool32Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '99',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool33Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '100',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool34Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '101',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool35Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '102',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool36Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '103',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool37Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '104',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool38Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '105',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool39Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '106',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool40Image,
+      description: 'Various colours available'
+    },
+    {
+      id: '107',
+      title: 'Variety Wool',
+      category: 'Yarns & Wool',
+      image: wool41Image,
       description: 'Various colours available'
     }
   ];
